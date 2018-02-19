@@ -1,0 +1,5 @@
+if [[ -t 1 ]]; then
+        put() { echo -n "\[$(tput $@)\]"; }
+        PS1="$(put setaf 10)\u@\h$(put setaf 7):$(put setaf 4)\w$(put sgr0)\$ "
+        unset put
+fi
