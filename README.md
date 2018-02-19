@@ -1,4 +1,4 @@
-# go-vim-docker
+# vim-go-docker
 A docker container for Go development using vim-go
 
 ### Usage
