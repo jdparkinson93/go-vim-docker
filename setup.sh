@@ -4,4 +4,4 @@
 docker build -t go-vim .
 
 ## Run container
-docker run -it -v /home/ape/jparkins/git:/git go-vim
+docker run -it -v $HOME/git:/git go-vim
