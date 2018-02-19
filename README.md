@@ -14,5 +14,5 @@ A docker container for Go development using vim-go
    * configure `$HOME` and `$GOPATH` variables for the container
    
 4. `setup.sh`
-   * configure `$image_name`
+   * configure `$IMAGE_NAME`
    * configure `$GOPATH_TARGET` matches that specified in `Dockerfile`
