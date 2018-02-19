@@ -2,17 +2,13 @@
 A docker container for Go development using vim-go
 
 ### Usage
-1. `.bashrc`
-   * configure `git config` parameters `user.name` and `user.email`
-   * adjust the prompt variable `$PS1` to personal preference
+1. `bashrc.template`
+   * configure environment variables that do not depend on system values (e.g. the prompt)
+  
+1. `setup.sh`
+   * configure `$IMAGE_NAME` //Default value is "vim-go"
+   * add any more local environment variables needed in the container
 
-2. `.vimrc`
+1. `.vimrc`
    * add more plug-ins if desired
    * customise `vim` settings
-
-3. `Dockerfile`
-   * configure `$HOME` and `$GOPATH` variables for the container
-   
-4. `setup.sh`
-   * configure `$IMAGE_NAME`
-   * configure `$GOPATH_TARGET` matches that specified in `Dockerfile`
