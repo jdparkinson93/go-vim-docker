@@ -10,7 +10,9 @@ echo "export http_proxy=$http_proxy" >> $bashrc
 echo "export https_proxy=$https_proxy" >> $bashrc
 echo "export no_proxy=$no_proxy" >> $bashrc
 
-GOPATH=/home/ape/jparkins/git
+if [[ -z $GOPATH ]]; then
+	read -p 'GOPATH not defined. Please enter: ' GOPATH
+fi
 GOPATH_DOCKER=$(echo "${GOPATH#$HOME}")
 echo "export GOPATH=$GOPATH_DOCKER" >> $bashrc
 
