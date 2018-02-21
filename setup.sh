@@ -28,6 +28,7 @@ echo "ENV GOPATH=$GOPATH_DOCKER" >> $dockerfile
 echo "ADD .vimrc \$HOME" >> $dockerfile
 echo "COPY .bashrc \$HOME" >> $dockerfile
 echo "RUN /bin/bash -c 'source \$HOME/.bashrc'" >> $dockerfile
+echo "WORKDIR \$GOPATH" >> $dockerfile
 
 IMAGE_NAME="vim-go"
 ## Build image
