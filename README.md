@@ -7,7 +7,7 @@ export GIT=/path/to/folder/containing/github.com/and/other/repositories/
 docker-compose up -d && docker exec -it go-dev bash
 ```
 For example, if your directory looked like the following
-```ruby
+```
 $HOME/
 |---git/
 |   |---github.com/
