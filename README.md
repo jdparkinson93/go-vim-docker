@@ -1,12 +1,26 @@
 # vim-go-docker
 An easy to use and customise docker container for Go development utilising vim-go.
 
-### Usage
+## Usage
 ```bash
 export GIT=/path/to/folder/containing/github.com/and/other/repositories
 docker-compose up -d && docker exec -it go-dev bash
 ```
-For example, if your directory structure is like the one below then set `GIT=$HOME/git`.
+### Examples
+For example, if your folder structure is a typical `Go` setup, shown below, then set `GIT=$HOME/go/src`.
+```
+$HOME/
+|---go/
+|   |---src/
+|   |   |---github.com/
+|   |   |   |---x/
+|   |   |   |---y/
+|   |   |   |---...
+|   |---pkg/
+|   |---bin/
+```
+
+If, on the other hand, your directory structure is more like the one below then set `GIT=$HOME/git`.
 ```
 $HOME/
 |---git/
