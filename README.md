@@ -1,14 +1,17 @@
 # vim-go-docker
-A docker container for Go development using vim-go
+An out-of-the-box docker setup for Go development using vim-go.
 
 ### Usage
-1. `bashrc.template`
-   * configure environment variables that do not depend on system values (e.g. the prompt)
-  
-1. `setup.sh`
-   * configure `$IMAGE_NAME` //Default value is "vim-go"
-   * add any more local environment variables needed in the container
+```bash
+docker-compose up -d && docker exec -it go-dev bash
+```
 
-1. `.vimrc`
-   * add more plug-ins if desired
-   * customise `vim` settings
+### Files
+1. `bashrc.template`
+   * replaces default `.bashrc` file
+1. `vimrc.template`
+   * specifies default `vim` settings
+   * specifies default `vim-go` plugins
+1. `script.sh`
+   * installs `vim`
+   * installs `vim-go`
