@@ -3,10 +3,10 @@ An easy to use and customise docker container for Go development utilising vim-g
 
 ### Usage
 ```bash
-export GIT=/path/to/folder/containing/github.com/and/other/repositories/
+export GIT=/path/to/folder/containing/github.com/and/other/repositories
 docker-compose up -d && docker exec -it go-dev bash
 ```
-For example, if your directory looked like the following
+For example, if your directory structure is like the one below then set `GIT=$HOME/git`.
 ```
 $HOME/
 |---git/
@@ -17,7 +17,7 @@ $HOME/
 |   |   |---z/
 |   |   |---...
 ```
-then you would set `GIT=$HOME/git`.
+t.
 
 
 ### Files
