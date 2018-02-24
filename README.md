@@ -1,5 +1,5 @@
 # vim-go-docker
-An out-of-the-box docker setup for Go development using vim-go.
+An easy to use and customise docker container for Go development utilising vim-go.
 
 ### Usage
 ```bash
