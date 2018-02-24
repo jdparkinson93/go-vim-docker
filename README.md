@@ -12,6 +12,8 @@ docker-compose up -d && docker exec -it go-dev bash
 1. `vimrc.template`
    * specifies default `vim` settings
    * specifies default `vim-go` plugins
+1. `Dockerfile`
+   * defines base image used for build, i.e. `golang:latest`
 1. `script.sh`
    * installs `vim`
    * installs `vim-go`
