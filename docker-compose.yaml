@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+        golang:
+                container_name: go-dev
+                image: golang:latest
+                working_dir: /go/src
+                command: /bin/bash -c '/root/script.sh'
+                tty: true
+                volumes:
+                        - $GIT:/go/src/
+                        - ./script.sh:/root/script.sh
+                        - ./bashrc.template:/root/.bashrc
+                        - ./vimrc.template:/root/.vimrc
+                          
+    #    environment:
+    #  - GOPATH=/opt/gopath
