@@ -12,6 +12,11 @@ services:
                         - ./script.sh:/root/script.sh
                         - ./bashrc.template:/root/.bashrc
                         - ./vimrc.template:/root/.vimrc
-                          
+                build:
+                        context: .
+                        args:
+                                - http_proxy
+                                - https_proxy
+                                - no_proxy
     #    environment:
     #  - GOPATH=/opt/gopath
