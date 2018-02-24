@@ -11,7 +11,7 @@ docker-compose up -d && docker exec -it go-dev bash
 
 `Dockerfile`: specifies base image used for build, i.e. `golang:latest`
 
-`bashrc.template`: replaces default `.bashrc` file
+`bashrc.template`: specifies desired bash settings and overwrites default `.bashrc` file
 
 `vimrc.template`: specifies default `vim` settings and `vim-go` plugins
 
