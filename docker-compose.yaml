@@ -9,6 +9,7 @@ services:
                 tty: true
                 volumes:
                         - $GIT:/go/src/
+                        - $HOME/.gitconfig:/root/.gitconfig
                         - ./script.sh:/root/script.sh
                         - ./bashrc.template:/root/.bashrc
                         - ./vimrc.template:/root/.vimrc
