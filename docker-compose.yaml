@@ -1,5 +1,4 @@
 version: '3'
-
 services:
         go-dev:
                 container_name: go-dev
@@ -19,5 +18,3 @@ services:
                                - http_proxy
                                - https_proxy
                                - no_proxy
-    #    environment:
-    #  - GOPATH=/opt/gopath
