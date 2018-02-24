@@ -7,7 +7,7 @@ services:
                 command: /bin/bash -c '/root/script.sh'
                 tty: true
                 volumes:
-                        - $GIT:/go/src/
+                        - $GOPATH:/go/src/
                         - ./script.sh:/root/script.sh
                         - ./bashrc.template:/root/.bashrc
                         - ./vimrc.template:/root/.vimrc
