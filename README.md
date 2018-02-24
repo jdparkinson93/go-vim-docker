@@ -8,13 +8,13 @@ docker-compose up -d && docker exec -it go-dev bash
 ```
 For example, if your directory looked like the following
 ```ruby
-$HOME
-|---git
-|   |---github.com
-|   |   |---x
-|   |   |---y
-|   |---some.other.repo
-|   |   |---z
+$HOME/
+|---git/
+|   |---github.com/
+|   |   |---x/
+|   |   |---y/
+|   |---some.other.repo/
+|   |   |---z/
 |   |   |---...
 ```
 then you would set `GIT=$HOME/git`.
