@@ -7,19 +7,12 @@ docker-compose up -d && docker exec -it go-dev bash
 ```
 
 ### Files
-`docker-compose.yaml`
-* defines container properties, i.e. volumes, directories, setup
+`docker-compose.yaml`: defines container properties, i.e. volumes, directories, setup
 
-`Dockerfile`
-* defines base image used for build, i.e. `golang:latest`
+`Dockerfile`: specifies base image used for build, i.e. `golang:latest`
 
-`bashrc.template`
-* replaces default `.bashrc` file
+`bashrc.template`: replaces default `.bashrc` file
 
-`vimrc.template`
-* specifies default `vim` settings
-* specifies default `vim-go` plugins
+`vimrc.template`: specifies default `vim` settings and `vim-go` plugins
 
-`script.sh`
-* installs `vim`
-* installs `vim-go`
+`script.sh`: installs `vim` and `vim-go`
