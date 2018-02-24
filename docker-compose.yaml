@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-        golang:
+        go-dev:
                 container_name: go-dev
                 image: golang:latest
                 working_dir: /go/src
@@ -13,10 +13,10 @@ services:
                         - ./bashrc.template:/root/.bashrc
                         - ./vimrc.template:/root/.vimrc
                 build:
-                        context: .
-                        args:
-                                - http_proxy
-                                - https_proxy
-                                - no_proxy
+                          context: .
+                          args:
+                               - http_proxy
+                               - https_proxy
+                               - no_proxy
     #    environment:
     #  - GOPATH=/opt/gopath
