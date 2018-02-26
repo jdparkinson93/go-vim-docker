@@ -2,15 +2,15 @@
 An easy to use and customise docker container for Go development utilising vim-go.
 
 ## Usage
+Ensure that the local `GOPATH` variable is set. If not, then set it: `export GOPATH=/path/to/go/path`.
 ```bash
-export GIT=/path/to/folder/containing/github.com/and/other/repositories
 docker-compose up -d && docker exec -it go-dev bash
 ```
 ### Examples
-For example, if your folder structure is a typical `Go` setup, shown below, then set `GIT=$HOME/go/src`.
+For example, if your folder structure is a typical `Go` setup, shown below, then set `GOPATH=$HOME/<directory>`. Typically, `<directory>` will be something such as `go` or `dev`.
 ```
 $HOME/
-|---go/
+|---<directory>/
 |   |---src/
 |   |   |---github.com/
 |   |   |   |---x/
@@ -20,14 +20,14 @@ $HOME/
 |   |---bin/
 ```
 
-If, on the other hand, your directory structure is more like the one below then set `GIT=$HOME/git`.
+If, on the other hand, your directory structure is more like the one below (_i.e._ there is no `src` directory) then set `GIT=$HOME`.
 ```
 $HOME/
-|---git/
+|---dev/
 |   |---github.com/
 |   |   |---x/
 |   |   |---y/
-|   |---some.other.repo/
+|   |---some.other.repo.directory/
 |   |   |---z/
 |   |   |---...
 ```
