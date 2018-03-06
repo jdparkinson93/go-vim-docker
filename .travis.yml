@@ -3,3 +3,6 @@ sudo: required
 
 services:
   - docker
+
+script:
+  - docker-compose up
