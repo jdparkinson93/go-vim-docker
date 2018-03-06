@@ -1,3 +1,5 @@
-language: go
+language: shell
+sudo: required
 
-go: 1.10
+services:
+  - docker
