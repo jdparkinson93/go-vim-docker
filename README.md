@@ -1,12 +1,19 @@
 [![Build Status](https://travis-ci.org/jdparkinson93/vim-go-docker.svg?branch=master)](https://travis-ci.org/jdparkinson93/vim-go-docker)
+[![Coverage](https://codecov.io/gh/jdparkinson93/vim-go-docker/branch/master/graph/badge.svg)](https://codecov.io/gh/jdparkinson93/vim-go-docker)
 # vim-go-docker
-An easy to use and customise docker container for Go development utilising vim-go.
+A docker container for [Go](https://golang.org) development utilising [vim-go](https://github.com/fatih/vim-go) and [vim-plug](https://github.com/junegunn/vim-plug).
 
 ## Usage
 Ensure that the local `GOPATH` variable is set. If not, then set it: `export GOPATH=/path/to/go/path`.
 ```bash
 docker-compose up -d && docker exec -it go-dev bash
 ```
+
+To stop the environment, run:
+```bash
+docker-compose down
+```
+
 ### Examples
 For example, if your folder structure is a typical `Go` setup, shown below, then set `GOPATH=$HOME/<directory>`. Typically, `<directory>` will be something such as `go` or `dev`.
 ```
