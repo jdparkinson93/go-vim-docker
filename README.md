@@ -1,4 +1,3 @@
-[![GoDoc](https://godoc.org/github.com/jdparkinson93/vim-go-docker?status.svg)](https://godoc.org/github.com/jdparkinson93/vim-go-docker)
 [![Build Status](https://travis-ci.org/jdparkinson93/vim-go-docker.svg?branch=master)](https://travis-ci.org/jdparkinson93/vim-go-docker)
 # vim-go-docker
 An easy to use and customise docker container for Go development utilising vim-go.
